@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Sample Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .logo {
+            max-width: 200px; 
+            margin-top: 20px;
+        }
+        .image {
+            max-width: 90%; 
+            max-height: 600px;
+            margin-top: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        input {
+            width: 250px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="masai_logo.svg" alt="Logo">
+        <img class="image" src="masai_banner.jpg" alt="Image">
+    </div>
+    <p>We will Learning the following things this week:</p>
+
+    <table>
+        <tr>
+            <td><b>Day 1</b></td>
+            <td><b>Day 2</b></td>
+            <td><b>Day 3</b></td>
+            <td><b>Day 4</b></td>
+        </tr>
+        <tr>
+            <td>Linux 1</td>
+            <td>HTML</td>
+            <td>Linux 2</td>
+            <td>Linux 3</td>
+        </tr>
+        <tr>
+            <td>GIT 1</td>
+            <td>CSS</td>
+            <td>GIT 2</td>
+            <td>Bootstrap</td>
+        </tr>
+    </table>
+    <p>If you want to contat me, please fill in this form:</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required><br>
+
+    </form> 
+    <h3>The following things are important to be a programmer</h3>
+    <ul>
+        <li>A problem solving mindset</li>
+        <li>Consistency
+            <ul>
+                <li>Clean code</li>
+                <li>Through knowledge of core concepts</li>
+                <li>Readable code</li>
+              </ul>
+        <li>Speed</li>
+      </ul> 
+</body>
+</html>
