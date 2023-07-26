@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Gallery</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .movie-box {
+      flex: 0 0 300px;
+      border: 0 solid #ccc;
+      box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+    }
+
+    .movie-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    .book-now-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="movie-box">
+      <img class="movie-image" src="8.jpg" alt="Movie 1">
+      <h2>Doctor Stranger 2</h2>
+      <p>Rating:4.5</p>
+      <button class="book-now-btn">Book Now</button>
+    </div>
+    <div class="movie-box">
+      <img class="movie-image" src="2.jpg" alt="Movie 2">
+      <h2>Bhool Bhuliya 2</h2>
+      <p>Rating:4.5</p>
+      <button class="book-now-btn">Book Now</button>
+    </div>
+    <div class="movie-box">
+      <img class="movie-image" src="4.jpeg" alt="Movie 3">
+      <h2>Jayeshbhai jordaa</h2>
+      <p>Rating:4.5</p>
+      <button class="book-now-btn">Book Now</button>
+    </div>
+    <div class="movie-box">
+      <img class="movie-image" src="5.jpeg" alt="Movie 4">
+      <h2>Jurassic world</h2>
+      <p>Rating:4.5</p>
+      <button class="book-now-btn">Book Now</button>
+    </div>
+    <div class="movie-box">
+      <img class="movie-image" src="1.jpeg" alt="Movie 5">
+      <h2>KGF 2</h2>
+      <p>Rating:4.5</p>
+      <button class="book-now-btn">Book Now</button>
+    </div>
+    <div class="movie-box">
+      <img class="movie-image" src="3.jpeg" alt="Movie 6">
+      <h2>RRR</h2>
+      <p>Rating:4.5</p>
+      <button class="book-now-btn">Book Now</button>
+    </div>
+  </div>
+</body>
+</html>
